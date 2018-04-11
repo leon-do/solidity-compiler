@@ -1,0 +1,26 @@
+{
+  "name": "solidity-compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "solc": "^0.4.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon-do/solidity-compiler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leon-do/solidity-compiler/issues"
+  },
+  "homepage": "https://github.com/leon-do/solidity-compiler#readme"
+}
