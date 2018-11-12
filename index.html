@@ -9,9 +9,18 @@ https://solidity-compiler.herokuapp.com/
 }
 
 
+or
 
 
-
+curl -X POST \
+  https://solidity-compiler.herokuapp.com/ \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: bdb8db45-704c-4b17-acc0-0fd33096e661' \
+  -H 'cache-control: no-cache' \
+  -d '{
+    "input": "contract x { function g() {} }"
+}
+'
 
 ============= Response ==============
 {
