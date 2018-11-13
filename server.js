@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5001
 const bodyParser = require('body-parser')
 var solc = require('solc')
 
@@ -8,6 +8,7 @@ express()
 
 .use(bodyParser.urlencoded({ extended: true }))
 .use(bodyParser.json())
+.use(express.static(__dirname + '/public'))
 
 .get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'));
@@ -26,4 +27,4 @@ express()
 
 })
 
-.listen(PORT)
+.listen(PORT, () => console.log(PORT))
